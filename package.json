@@ -26,11 +26,11 @@
 	"files": [
 		"index.js"
 	],
-	"author": "Luca Perret <perret.luca@gmail.com>",
+	"author": "Drew Delianides <drew.delianides@gmail.com>",
 	"contributors": [
 		{
-			"name": "Drew Delianides",
-			"email": "drew.delianides@gmail.com"
+			"name": "Luca Perret",
+			"email": "perret.luca@gmail.com"
 		}
 	],
 	"license": "MIT",
