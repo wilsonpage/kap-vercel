@@ -1,6 +1,8 @@
 # kap-vercel [![Build Status](https://travis-ci.org/lucaperret/kap-now.svg?branch=master)](https://travis-ci.org/lucaperret/kap-now) [![npm](https://img.shields.io/npm/dt/kap-now.svg)](https://www.npmjs.com/package/kap-now)
 
-![Vercel logo](https://www.finsmes.com/wp-content/uploads/2020/04/vercel.png "vercel.com")
+<p align="center">
+  <img width="300" height="109" src="vercel.png">
+</p>
 
 > [Kap](https://github.com/wulkano/kap) plugin - Share on [Vercel](https://vercel.com)
 
@@ -17,5 +19,4 @@ In the editor, after recording, select one of the export formats, and then `Shar
 
 ## License
 
-MIT © [Luca Perret](https://github.com/lucaperret),[Drew
-Delianides](https://github.com/delianides)
+See LICENSE

@@ -16,6 +16,6 @@ test(async t => {
 
 	await plugin.run();
 
-	t.is(plugin.context.request.lastCall.args[0], 'https://api.zeit.co/v2/now/deployments');
+	t.is(plugin.context.request.lastCall.args[0], 'https://api.vercel.com/v12/now/deployments');
 	t.true(plugin.context.copyToClipboard.calledWith('https://kapture-934893485.now.sh'));
 });
