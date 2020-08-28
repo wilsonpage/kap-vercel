@@ -4,8 +4,8 @@ const through2 = require('through2');
 const {readFile} = require('fs-extra');
 
 const action = async context => {
-	const uploadEndpoint = 'https://api.zeit.co/v2/now/files';
-	const deploymentEndpoint = 'https://api.zeit.co/v2/now/deployments';
+	const uploadEndpoint = 'https://api.vercel.co/v12/now/files';
+	const deploymentEndpoint = 'https://api.vercel.co/v2/now/deployments';
 	const Authorization = 'Bearer ' + context.config.get('token');
 
 	const filePath = await context.filePath();
@@ -26,7 +26,7 @@ const action = async context => {
 		body: stream
 	});
 
-	context.setProgress('Creating Now deployment…');
+	context.setProgress('Creating Vercel deployment…');
 	const deploymentResponse = await context.request(deploymentEndpoint, {
 		headers: {
 			Authorization
@@ -34,7 +34,6 @@ const action = async context => {
 		json: true,
 		body: {
 			name: context.config.get('name'),
-			deploymentType: 'STATIC',
 			files: [
 				{
 					file: context.defaultFileName,
@@ -50,13 +49,13 @@ const action = async context => {
 };
 
 const now = {
-	title: 'Share on Now',
+	title: 'Share on Vercel',
 	formats: ['gif', 'mp4', 'webm', 'apng'],
 	action,
 	config: {
 		token: {
 			title: 'Now token',
-			description: 'Create one here https://zeit.co/account/tokens',
+			description: 'Create one here https://vercel.com/account/tokens',
 			type: 'string',
 			required: true
 		},
