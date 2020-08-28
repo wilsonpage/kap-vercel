@@ -1,4 +1,4 @@
-# kap-vercel [![Build Status](https://travis-ci.org/lucaperret/kap-now.svg?branch=master)](https://travis-ci.org/lucaperret/kap-now) [![npm](https://img.shields.io/npm/dt/kap-now.svg)](https://www.npmjs.com/package/kap-now)
+# kap-vercel ![Node.js CI](https://github.com/delianides/kap-vercel/workflows/Node.js%20CI/badge.svg?branch=master) [![npm](https://img.shields.io/npm/dt/kap-vercel.svg)](https://www.npmjs.com/package/kap-vercel)
 
 <p align="center">
   <img width="300" height="109" src="vercel.png">
