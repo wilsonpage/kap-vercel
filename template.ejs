@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:description" 
+          content="Kapture Screen Recording"
+          />
+    <%if (format == 'webm' || format == 'mp4') { %>
+      <meta property="og:video" content="<%= title %>" />
+      <link
+        href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+        rel="stylesheet"
+      />
+      <!-- City -->
+      <link
+        href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+        rel="stylesheet"
+        />
+    <% } else { %>
+      <meta property="og:image" content="<%= title %>" />
+    <% } %>
+    <style>
+     body {
+       font-family: 'san-serif';
+     }
+     main {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+     }
+     main .video {
+       height: 432px;
+       width: 768px;
+     }
+     main .image {
+       height: 576px;
+       width: 1024px;
+     }
+     main .image img {
+       max-width: 100%;
+       max-height: 100%;
+       display: block;
+       margin: auto;
+     }
+    </style>
+
+  <title><%= title %></title>
+  </head>
+  <body>
+    <main>
+      <%if (format == 'webm' || format == 'mp4') { %>
+      <div class="video">
+          <video
+            id="kapture-video"
+            class="video-js vjs-fill vjs-theme-city"
+            controls
+            preload="auto"
+            data-setup='{"responsive": true}'
+          >
+            <source src="<%= title %>" type="video/<%= format %>" />
+            <p class="vjs-no-js">
+              To view this video please enable JavaScript, and consider upgrading to a
+              web browser that
+              <a href="https://videojs.com/html5-video-support/" target="_blank"
+                >supports HTML5 video</a
+              >
+            </p>
+          </video>
+        </div>
+        <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+      <% } else { %>
+        <div class="image">
+          <img src="<%= title %>" alt="Kapture Screen Recording" />
+        </div>
+      <% } %>
+    </main>
+  </body>
+</html>
