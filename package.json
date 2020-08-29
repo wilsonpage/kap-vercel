@@ -24,7 +24,8 @@
 		"share"
 	],
 	"files": [
-		"index.js"
+		"index.js",
+		"template.ejs"
 	],
 	"author": "Drew Delianides <drew.delianides@gmail.com>",
 	"contributors": [
