@@ -6,7 +6,7 @@
 
 > [Kap](https://github.com/wulkano/kap) plugin - Share on [Vercel](https://vercel.com)
 
-Exports your Kap recording to a dedicated Vercel project. Visit/share your Vercel project's url to watch the latest recording. Each time your export, the recording is overwritten.
+Exports your Kap recording to a dedicated Vercel project. Visit/share your Vercel project's url to watch the latest recording. Each time you export, the recording is overwritten.
 
 ![image](https://user-images.githubusercontent.com/1020551/127328782-1c095e6a-dac5-443e-a539-bbecc1721a0e.png)
 
