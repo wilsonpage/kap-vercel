@@ -6,6 +6,10 @@
 
 > [Kap](https://github.com/wulkano/kap) plugin - Share on [Vercel](https://vercel.com)
 
+Exports your Kap recording to a dedicated Vercel project. Visit/share your Vercel project's url to watch the latest recording. Each time your export, the recording is overwritten.
+
+![image](https://user-images.githubusercontent.com/1020551/127328782-1c095e6a-dac5-443e-a539-bbecc1721a0e.png)
+
 ## Install
 
 In the `Kap` menu, go to `Preferences…`, select the `Plugins` pane, find this plugin, and click `Install`.
@@ -16,6 +20,8 @@ In the `Plugins` pane, click `Open plugins folder`, edit the `kap-vercel.json` f
 ## Usage
 
 In the editor, after recording, select one of the export formats, and then `Share on Vercel`.
+
+![image](https://user-images.githubusercontent.com/1020551/127329088-408ff31d-36a3-498d-a996-19f0c26e3822.png)
 
 ## License
 
